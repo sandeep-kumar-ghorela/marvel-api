@@ -1,0 +1,48 @@
+<config
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns='http://www.ehcache.org/v3'
+  xmlns:jsr107='http://www.ehcache.org/v3/jsr107'
+  xsi:schemaLocation="
+            http://www.ehcache.org/v3
+            http://www.ehcache.org/schema/ehcache-core-3.7.xsd">
+  <service>
+    <jsr107:defaults enable-management="true" enable-statistics="true"/>
+  </service>
+
+  <!-- Default cache template -->
+  <cache-template name="default">
+    <expiry>
+      <ttl unit="seconds">900</ttl>
+    </expiry>
+    <resources>
+      <heap unit="entries">1000</heap>
+      <offheap unit="MB">5</offheap>
+    </resources>
+  </cache-template>
+
+  <cache-template name="shortttl">
+    <expiry>
+      <ttl unit="seconds">1800</ttl>
+    </expiry>
+    <resources>
+      <heap unit="entries">1000</heap>
+      <offheap unit="MB">5</offheap>
+    </resources>
+    <jsr107:mbeans enable-statistics="true"/>
+  </cache-template>
+
+
+  <cache-template name="longttl">
+    <expiry>
+      <ttl unit="seconds">3600</ttl>
+    </expiry>
+    <resources>
+      <heap unit="entries">1000</heap>
+      <offheap unit="MB">5</offheap>
+    </resources>
+    <jsr107:mbeans enable-statistics="true"/>
+  </cache-template>
+
+  <cache alias="characterIds" uses-template="longttl" />
+
+</config>

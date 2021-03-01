@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.marvel.service.MarvelServiceImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-01T16:32:03" hostname="UKHOITMB2971" time="4.859">
+  <properties/>
+  <testcase name="shouldReturnUnauthorizedWhenPublicKeyIsInvalid()" classname="com.marvel.service.MarvelServiceImplTest" time="1.365"/>
+  <testcase name="shouldReturnUnauthorizedWhenHashIsInvalid()" classname="com.marvel.service.MarvelServiceImplTest" time="0.212"/>
+  <testcase name="testGeCharacterIds()" classname="com.marvel.service.MarvelServiceImplTest" time="3.058"/>
+  <testcase name="testgetCharacterDetail()" classname="com.marvel.service.MarvelServiceImplTest" time="0.223"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

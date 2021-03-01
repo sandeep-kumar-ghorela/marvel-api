@@ -1,0 +1,11 @@
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+
+props:
+  serviceUrl: http://gateway.marvel.com/v1/public/characters
+  publicKey: ?apikey=345934088c7bbb162a21be411c121b66
+  timeStamp:  ts=123456
+  hashValue:  hash=93169818e97d668892b4849c6ad42fae
+  limit:  limit=100

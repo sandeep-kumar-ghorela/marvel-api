@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.marvel.controller.MarvelApiControllerIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-01T16:32:15" hostname="UKHOITMB2971" time="2.562">
+  <properties/>
+  <testcase name="cacheShouldNotBeEmpty" classname="com.marvel.controller.MarvelApiControllerIntegrationTest" time="2.336"/>
+  <testcase name="shouldReturnStatusOK_GetCharacterIds" classname="com.marvel.controller.MarvelApiControllerIntegrationTest" time="0.007"/>
+  <testcase name="shouldReturnStatusOK_GetCharacterDetail" classname="com.marvel.controller.MarvelApiControllerIntegrationTest" time="0.217"/>
+  <system-out><![CDATA[16:32:08.122 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.marvel.controller.MarvelApiControllerIntegrationTest]
+16:32:08.122 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.marvel.controller.MarvelApiControllerIntegrationTest]
+16:32:08.123 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.marvel.controller.MarvelApiControllerIntegrationTest]
+16:32:08.123 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.marvel.controller.MarvelApiControllerIntegrationTest]
+16:32:08.126 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@e9489b5 testClass = MarvelApiControllerIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5853208e testClass = MarvelApiControllerIntegrationTest, locations = '{}', classes = '{class com.marvel.ApplicationController, class com.marvel.ApplicationController}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7f565636, [ImportsContextCustomizer@158cbe25 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@352924aa, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5f40ff58, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@68fbc47b], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+16:32:08.128 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.marvel.controller.MarvelApiControllerIntegrationTest]
+16:32:08.128 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.marvel.controller.MarvelApiControllerIntegrationTest]
+16:32:08.149 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2021-03-01 16:32:13.403  INFO 4707 --- [    Test worker] c.m.c.MarvelApiControllerIntegrationTest : Starting MarvelApiControllerIntegrationTest on UKHOITMB2971 with PID 4707 (started by sandeepg in /Users/sandeepg/Documents/personal_projects/marvel-api)
+2021-03-01 16:32:13.404  INFO 4707 --- [    Test worker] c.m.c.MarvelApiControllerIntegrationTest : No active profile set, falling back to default profiles: default
+2021-03-01 16:32:14.476  INFO 4707 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:32:15.153  INFO 4707 --- [    Test worker] o.t.o.p.UpfrontAllocatingPageSource      : Allocating 5.0MB in chunks
+2021-03-01 16:32:15.176  INFO 4707 --- [    Test worker] org.ehcache.core.EhcacheManager          : Cache 'characterIds' created in EhcacheManager.
+2021-03-01 16:32:15.233  INFO 4707 --- [    Test worker] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./Users/sandeepg/Documents/personal_projects/marvel-api/build/resources/main/ehcache.xml,Cache=characterIds
+2021-03-01 16:32:15.234  INFO 4707 --- [    Test worker] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./Users/sandeepg/Documents/personal_projects/marvel-api/build/resources/main/ehcache.xml,Cache=characterIds
+2021-03-01 16:32:15.242  INFO 4707 --- [    Test worker] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./Users/sandeepg/Documents/personal_projects/marvel-api/build/resources/main/ehcache.xml,Cache=characterIds
+2021-03-01 16:32:15.242  INFO 4707 --- [    Test worker] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./Users/sandeepg/Documents/personal_projects/marvel-api/build/resources/main/ehcache.xml,Cache=characterIds
+2021-03-01 16:32:15.301  INFO 4707 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-01 16:32:15.301  INFO 4707 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-01 16:32:15.311  INFO 4707 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
+2021-03-01 16:32:15.329  INFO 4707 --- [    Test worker] c.m.c.MarvelApiControllerIntegrationTest : Started MarvelApiControllerIntegrationTest in 7.171 seconds (JVM running for 23.023)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
